@@ -1,0 +1,16 @@
+type Task @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  running: Boolean!
+  start_time: AWSTimestamp!
+}
+
+type Project @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+}
+
+type Client @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+}

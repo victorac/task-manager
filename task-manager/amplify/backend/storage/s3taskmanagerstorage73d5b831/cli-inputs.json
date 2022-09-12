@@ -1,0 +1,13 @@
+{
+  "resourceName": "s3taskmanagerstorage73d5b831",
+  "bucketName": "task-manager-storage-73d5b831",
+  "policyUUID": "a8cf583c",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "READ",
+    "CREATE_AND_UPDATE"
+  ]
+}

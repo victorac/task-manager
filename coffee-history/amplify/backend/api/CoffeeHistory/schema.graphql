@@ -1,0 +1,23 @@
+type Attributes @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  coffeeentrys: [CoffeeEntry] @manyToMany(relationName: "CoffeeEntryAttributes")
+}
+
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  nickname: String
+  CoffeeEntries: [CoffeeEntry] @hasMany(indexName: "byUser", fields: ["id"])
+}
+
+type CoffeeEntry @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  nickname: String
+  img: String
+  rating: Int
+  userID: ID! @index(name: "byUser")
+  Attributes: [Attributes] @manyToMany(relationName: "CoffeeEntryAttributes")
+  attributes: [ID]
+}

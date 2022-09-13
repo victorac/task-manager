@@ -15,7 +15,7 @@ function App() {
   return (
     <Authenticator>
       {({ signOut, user }) => (
-        <Home user={user} sign_out={signOut}/>
+        <Home user={user} signOut={signOut}/>
       )}
     </Authenticator>
   );

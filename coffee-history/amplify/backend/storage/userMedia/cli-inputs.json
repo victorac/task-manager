@@ -1,0 +1,14 @@
+{
+  "resourceName": "userMedia",
+  "policyUUID": "a88a9b52",
+  "bucketName": "coffeehistory4ad6f173fbe5433aa89966c922dfbf99",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "S3Triggere23fa3ab",
+  "groupAccess": {}
+}

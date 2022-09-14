@@ -10,6 +10,14 @@
       "StackName": "amplify-coffeehistory-staging-142912",
       "StackId": "arn:aws:cloudformation:us-east-1:242543491968:stack/amplify-coffeehistory-staging-142912/703a5c20-3370-11ed-8053-12484d2aa231",
       "AmplifyAppId": "d2qr6g1pqwq6i3"
+    },
+    "categories": {
+      "function": {
+        "S3Triggere23fa3ab": {
+          "deploymentBucketName": "amplify-coffeehistory-staging-142912-deployment",
+          "s3Key": "amplify-builds/S3Triggere23fa3ab-4365596f484f674f424b-build.zip"
+        }
+      }
     }
   }
 }

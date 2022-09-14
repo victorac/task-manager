@@ -15,8 +15,8 @@ function urltoFile(url, filename, mimeType){
 }
 
 async function processImage(username, photo) {
-    const file = await urltoFile(photo, "photo.jpeg", "image/jpeg");
-    const response = await Storage.put(`${username}/photo.jpeg`, file, {level: "private"});
+    const file = await urltoFile(photo, "photo.jpg", "image/jpeg");
+    const response = await Storage.put(`${username}/photo.jpg`, file, {level: "private"});
     if (Object.getOwnPropertyNames(response).includes("key")){
         return true;
     }

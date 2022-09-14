@@ -12,11 +12,8 @@
       "AmplifyAppId": "d2qr6g1pqwq6i3"
     },
     "categories": {
-      "function": {
-        "S3Triggere23fa3ab": {
-          "deploymentBucketName": "amplify-coffeehistory-staging-142912-deployment",
-          "s3Key": "amplify-builds/S3Triggere23fa3ab-4365596f484f674f424b-build.zip"
-        }
+      "auth": {
+        "CoffeeHistory": {}
       }
     }
   }

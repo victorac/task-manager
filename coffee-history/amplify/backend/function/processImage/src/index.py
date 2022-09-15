@@ -5,8 +5,8 @@ import urllib.parse
 import urllib.error
 from io import BytesIO
 
-rekognition = boto3.client('rekognition')
-s3 = boto3.client('s3')
+rekognition = boto3.client('rekognition', region_name = "us-east-1")
+# s3 = boto3.client('s3')
 
 
 def handler(event, context):
@@ -34,7 +34,7 @@ def handler(event, context):
         detection_bytes = str.encode(detection_json)
         detection_file = BytesIO(detection_bytes)
         detection_key = ".".join(key.split(".")[:-1]) + ".json"
-        s3.put_object(ACL='private', Body=detection_file, Bucket=bucket, Key=detection_key)
+        # s3.put_object(ACL='private', Body=detection_file, Bucket=bucket, Key=detection_key)
         return len(textDetections)
     except Exception as e:
         print(e)

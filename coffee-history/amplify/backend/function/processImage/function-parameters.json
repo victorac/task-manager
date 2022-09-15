@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "api": {
+      "CoffeeHistory": [
+        "Query",
+        "Mutation"
+      ]
+    },
+    "storage": {
+      "userMedia": [
+        "read"
+      ],
+      "CoffeeEntry:@model(appsync)": [
+        "create",
+        "read",
+        "update"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

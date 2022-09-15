@@ -57,7 +57,31 @@
       }
     }
   },
-  "function": {},
+  "function": {
+    "processImage": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [
+        {
+          "category": "api",
+          "resourceName": "CoffeeHistory",
+          "attributes": [
+            "GraphQLAPIIdOutput",
+            "GraphQLAPIEndpointOutput",
+            "GraphQLAPIKeyOutput"
+          ]
+        },
+        {
+          "category": "storage",
+          "resourceName": "userMedia",
+          "attributes": [
+            "BucketName"
+          ]
+        }
+      ]
+    }
+  },
   "storage": {
     "userMedia": {
       "service": "S3",

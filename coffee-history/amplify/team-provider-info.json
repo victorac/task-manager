@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "CoffeeHistory": {}
+      },
+      "function": {
+        "processImage": {
+          "deploymentBucketName": "amplify-coffeehistory-staging-142912-deployment",
+          "s3Key": "amplify-builds/processImage-7671626d6e6f2b346c74-build.zip"
+        }
       }
     }
   }
